@@ -24,17 +24,6 @@
 
 -------------------------------------------------------------------------------------------------------------------------
 
-### Settings Visual Studio Code over SSH Key
-
-     ssh-keygen -t rsa -b 4096
-     cd ~/.ssh
-     cat id_rsa.pub >> ~/.ssh/authorized_keys
-     cat authorized_keys
-     cat id_rsa 
-     copy id_rsa on Host Windows(C:\Users\사용자\.ssh)      
-
-
-
 ### Visual Stdio Code & Extensions
 
 Install Visual Studio Code(https://code.visualstudio.com/download)
@@ -45,10 +34,30 @@ Install Visual Studio Code(https://code.visualstudio.com/download)
     Extension Pack for Java - Extension
     Spring Boot Extension Pack - Extension
 
+### Settings Visual Studio Code over SSH Key
+
+     ssh-keygen -t rsa -b 4096
+     cd ~/.ssh
+     cat id_rsa.pub >> ~/.ssh/authorized_keys
+     cat authorized_keys
+     cat id_rsa 
+     copy id_rsa on Host Windows(C:\Users\사용자\.ssh)      
+
 ### Init
 
     $ sudo apt-get install zip nano vim iputils-ping git
     $ sudo apt-get install maven
+
+### Setting Java
+
+    sudo apt update
+    sudo apt install openjdk-17(또는 8)-jdk
+    java -version
+    javac -version
+    .bashrc
+    export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
+    export PATH=$PATH:$JAVA_HOME
+    echo $JAVA_HOME
 
 ### Docker
 
