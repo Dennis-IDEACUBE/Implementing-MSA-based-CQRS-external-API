@@ -40,6 +40,12 @@ sudo systemctl restart network
 | ftgo app server         | ftgo                      | 2 vCPU, 8 GB RAM, 500GB Disk                      | 192.168.15.100  | 22       |
 | my app server           | myserver                  | 2 vCPU, 8 GB RAM, 500GB Disk                      | 192.168.15.101  | 23       |
 
+### ubuntu user/pwd/etd
+
+    사용자 아이디 : user1
+    사용자 비밀번호 : 1234
+    서버 호스트 명 : ftgo 또는 myserver
+
 ### Init & Java
 
     $ sudo apt-get install zip nano vim iputils-ping git
