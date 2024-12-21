@@ -7,6 +7,7 @@
 ### Setting HostName & Hosts & Network
 
 <img src="https://github.com/Dennis-IDEACUBE/Implementing-MSA-based-CQRS-external-API/blob/main/nat_custom.png?raw=true">
+<img src="https://github.com/Dennis-IDEACUBE/Implementing-MSA-based-CQRS-external-API/blob/main/nat_custom.png2?raw=true">
 
 cidr : 192.168.15.0/24
 ip : 192.168.15.x
