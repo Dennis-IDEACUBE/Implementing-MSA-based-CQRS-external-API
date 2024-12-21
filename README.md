@@ -56,7 +56,7 @@ sudo systemctl restart network
     $ javac -version
     $ nano .bashrc
     export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
-    export PATH=$PATH:$JAVA_HOME
+    export PATH=$PATH:$JAVA_HOME/bin
     $ echo $JAVA_HOME
     $ sudo apt-get install maven
     $ mvn -version
