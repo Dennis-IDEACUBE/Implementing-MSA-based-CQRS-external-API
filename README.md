@@ -25,3 +25,70 @@
      cat authorized_keys
      cat id_rsa 
      copy id_rsa on Host Windows(C:\Users\사용자\.ssh)      
+
+### docker-compose
+
+      sudo apt-get install docker-compose
+
+### WSL(Windows Subsystem for Linux)
+
+https://learn.microsoft.com/ko-kr/windows/wsl/install
+
+    # Command Prompt
+    wsl --update
+    wsl -v
+    # It must be VERSION 2
+    wsl -l -v
+    wsl --list --online
+    wsl --install Ubuntu-22.04
+    # Reboot
+
+### Visual Stdio Code & Extensions
+
+Install Visual Studio Code(https://code.visualstudio.com/download)
+
+    WSL(or Remote - SSH) - Extension
+    # Create Ubunt-22.04
+    # After jdk 17
+    Extension Pack for Java - Extension
+    Spring Boot Extension Pack - Extension
+
+### Init
+
+    $ sudo apt-get install zip nano vim iputils-ping git
+    $ sudo apt-get install maven
+
+### Docker
+
+https://docs.docker.com/engine/install/ubuntu/
+
+    # Add Docker's official GPG key:
+    sudo apt-get update
+    sudo apt-get install ca-certificates curl
+    sudo install -m 0755 -d /etc/apt/keyrings
+    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+    sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+    # Add the repository to Apt sources:
+    echo \
+      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+      $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    sudo apt-get update
+
+    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    sudo docker run hello-world
+
+https://docs.docker.com/engine/install/linux-postinstall/
+
+    $ sudo groupadd docker
+    $ sudo usermod -aG docker $USER
+    # Logout -> Login
+    $ newgrp docker
+    $ docker run hello-world
+
+    # Security Issues
+    $ sudo chmod 666 /var/run/docker.sock
+    
+    $ docker login
+    $ docker pull ubuntu:22.04
