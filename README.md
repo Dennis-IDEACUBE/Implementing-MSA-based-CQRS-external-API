@@ -17,6 +17,13 @@
       
       CMD ./wait-for-dynamodblocal.sh && ./create-dynamodb-tables.sh
 
+### docker-compose
+
+      sudo apt-get install docker-compose
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
 ### Settings Visual Studio Code over SSH Key
 
      ssh-keygen -t rsa -b 4096
@@ -26,28 +33,13 @@
      cat id_rsa 
      copy id_rsa on Host Windows(C:\Users\사용자\.ssh)      
 
-### docker-compose
 
-      sudo apt-get install docker-compose
-
-### WSL(Windows Subsystem for Linux)
-
-https://learn.microsoft.com/ko-kr/windows/wsl/install
-
-    # Command Prompt
-    wsl --update
-    wsl -v
-    # It must be VERSION 2
-    wsl -l -v
-    wsl --list --online
-    wsl --install Ubuntu-22.04
-    # Reboot
 
 ### Visual Stdio Code & Extensions
 
 Install Visual Studio Code(https://code.visualstudio.com/download)
 
-    WSL(or Remote - SSH) - Extension
+    Remote SSH - Extension
     # Create Ubunt-22.04
     # After jdk 17
     Extension Pack for Java - Extension
