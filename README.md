@@ -4,6 +4,17 @@
 ### Microservices Patterns With examples in Java(GitHub)
 - https://github.com/microservices-patterns/ftgo-application
 
+### Java
+
+    $ sudo apt update
+    $ sudo apt install openjdk-17(또는 8)-jdk
+    $ java -version
+    $ javac -version
+    $ nano .bashrc
+    export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
+    export PATH=$PATH:$JAVA_HOME
+    $ echo $JAVA_HOME
+
 ### dynamodblocal-init
 
       # FROM python:2.7.16-alpine3.9
@@ -57,7 +68,7 @@ Install Visual Studio Code(https://code.visualstudio.com/download)
     $ nano .bashrc
     export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
     export PATH=$PATH:$JAVA_HOME
-    echo $JAVA_HOME
+    $ echo $JAVA_HOME
 
 ### Setting Java
 
