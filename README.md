@@ -36,49 +36,60 @@ Install Visual Studio Code(https://code.visualstudio.com/download)
 
 ### Settings Visual Studio Code over SSH Key
 
-     ssh-keygen -t rsa -b 4096
-     cd ~/.ssh
-     cat id_rsa.pub >> ~/.ssh/authorized_keys
-     cat authorized_keys
-     cat id_rsa 
-     copy id_rsa on Host Windows(C:\Users\사용자\.ssh)      
+    $ ssh-keygen -t rsa -b 4096
+    $ cd ~/.ssh
+    $ cat id_rsa.pub >> ~/.ssh/authorized_keys
+    $ cat authorized_keys
+    $ cat id_rsa 
+    $ copy id_rsa on Host Windows(C:\Users\사용자\.ssh)      
 
 ### Init
 
     $ sudo apt-get install zip nano vim iputils-ping git
     $ sudo apt-get install maven
 
-### Setting Java
+### Java
 
-    sudo apt update
-    sudo apt install openjdk-17(또는 8)-jdk
-    java -version
-    javac -version
-    .bashrc
+    $ sudo apt update
+    $ sudo apt install openjdk-17(또는 8)-jdk
+    $ java -version
+    $ javac -version
+    $ nano .bashrc
     export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
     export PATH=$PATH:$JAVA_HOME
     echo $JAVA_HOME
+
+### Setting Java
+
+    $ sudo apt update
+    $ sudo apt install openjdk-17(또는 8)-jdk
+    $ java -version
+    $ javac -version
+    $.bashrc
+    $ export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
+    $ export PATH=$PATH:$JAVA_HOME
+    $ echo $JAVA_HOME
 
 ### Docker
 
 https://docs.docker.com/engine/install/ubuntu/
 
     # Add Docker's official GPG key:
-    sudo apt-get update
-    sudo apt-get install ca-certificates curl
-    sudo install -m 0755 -d /etc/apt/keyrings
-    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-    sudo chmod a+r /etc/apt/keyrings/docker.asc
+    $ sudo apt-get update
+    $ sudo apt-get install ca-certificates curl
+    $ sudo install -m 0755 -d /etc/apt/keyrings
+    $ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+    $ sudo chmod a+r /etc/apt/keyrings/docker.asc
 
     # Add the repository to Apt sources:
-    echo \
+    $ echo \
       "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
       $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
       sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    sudo apt-get update
+    $ sudo apt-get update
 
-    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-    sudo docker run hello-world
+    $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    $ sudo docker run hello-world
 
 https://docs.docker.com/engine/install/linux-postinstall/
 
