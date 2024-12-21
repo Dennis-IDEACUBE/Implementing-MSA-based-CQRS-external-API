@@ -20,10 +20,10 @@
     $ mvn -version
 
 
-### dynamodblocal-init
+### dynamodblocal-init(파일수정)
 
-      # FROM python:2.7.16-alpine3.9
-      FROM python:3-alpine3.11
+      # FROM python:2.7.16-alpine3.9 --> 오류 발생
+      FROM python:3-alpine3.11 
       RUN pip install awscli --upgrade
       COPY create-dynamodb-tables.sh .
       COPY ftgo-order-history.json .
