@@ -17,6 +17,7 @@
     export PATH=$PATH:$JAVA_HOME
     $ echo $JAVA_HOME
     $ sudo apt-get install maven
+    $ mvn -version
 
 
 ### dynamodblocal-init
