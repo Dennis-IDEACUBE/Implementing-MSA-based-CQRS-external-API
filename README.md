@@ -4,7 +4,9 @@
 ### Microservices Patterns With examples in Java(GitHub)
 - https://github.com/microservices-patterns/ftgo-application
 
-### Java
+### Init & Java
+
+    $ sudo apt-get install zip nano vim iputils-ping git
 
     $ sudo apt update
     $ sudo apt install openjdk-17(또는 8)-jdk
@@ -14,6 +16,8 @@
     export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
     export PATH=$PATH:$JAVA_HOME
     $ echo $JAVA_HOME
+    $ sudo apt-get install maven
+
 
 ### dynamodblocal-init
 
@@ -53,33 +57,6 @@ Install Visual Studio Code(https://code.visualstudio.com/download)
     $ cat authorized_keys
     $ cat id_rsa 
     $ copy id_rsa on Host Windows(C:\Users\사용자\.ssh)      
-
-### Init
-
-    $ sudo apt-get install zip nano vim iputils-ping git
-    $ sudo apt-get install maven
-
-### Java
-
-    $ sudo apt update
-    $ sudo apt install openjdk-17(또는 8)-jdk
-    $ java -version
-    $ javac -version
-    $ nano .bashrc
-    export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
-    export PATH=$PATH:$JAVA_HOME
-    $ echo $JAVA_HOME
-
-### Setting Java
-
-    $ sudo apt update
-    $ sudo apt install openjdk-17(또는 8)-jdk
-    $ java -version
-    $ javac -version
-    $.bashrc
-    $ export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
-    $ export PATH=$PATH:$JAVA_HOME
-    $ echo $JAVA_HOME
 
 ### Docker
 
