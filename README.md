@@ -19,6 +19,40 @@
     $ sudo apt-get install maven
     $ mvn -version
 
+### Git Clone
+
+### Setting HostName & Hosts & Network
+
+cidr : 192.168.15.0/24
+ip : 192.168.15.x
+gateway : 192.168.15.1
+dns : 168.126.63.1, 8.8.8.8
+
+/etc/netplan/00-installer-config.yaml
+
+     # This is the network config written by 'subiquity'
+     network:
+       ethernets:
+         enp0s3:
+           addresses:
+           - 192.168.15.100/24 # change ip address
+           nameservers:
+             addresses:
+             - 168.126.63.1
+             - 8.8.8.8
+             search: []
+           routes:
+           - to: default
+             via: 192.168.15.1
+       version: 2
+
+sudo systemctl restart network
+
+### ftgo app server & my app server
+| Server Role             | Server Hostname           | Specs                                             | IP Address     | Host Port |
+| ----------------------- | ------------------------- | ------------------------------------------------- | -------------- | --------- |
+| ftgo app server         | ftgo                      | 2 vCPU, 8 GB RAM, 500GB Disk                      | 192.168.15.100  | 22       |
+| my app server           | myserver                  | 2 vCPU, 8 GB RAM, 500GB Disk                      | 192.168.15.101  | 23       |
 
 ### dynamodblocal-init(파일수정)
 
