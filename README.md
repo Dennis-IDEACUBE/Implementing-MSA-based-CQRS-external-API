@@ -4,23 +4,6 @@
 ### Microservices Patterns With examples in Java(GitHub)
 - https://github.com/microservices-patterns/ftgo-application
 
-### Init & Java
-
-    $ sudo apt-get install zip nano vim iputils-ping git
-
-    $ sudo apt update
-    $ sudo apt install openjdk-17(또는 8)-jdk
-    $ java -version
-    $ javac -version
-    $ nano .bashrc
-    export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
-    export PATH=$PATH:$JAVA_HOME
-    $ echo $JAVA_HOME
-    $ sudo apt-get install maven
-    $ mvn -version
-
-### Git Clone
-
 ### Setting HostName & Hosts & Network
 
 cidr : 192.168.15.0/24
@@ -53,6 +36,24 @@ sudo systemctl restart network
 | ----------------------- | ------------------------- | ------------------------------------------------- | -------------- | --------- |
 | ftgo app server         | ftgo                      | 2 vCPU, 8 GB RAM, 500GB Disk                      | 192.168.15.100  | 22       |
 | my app server           | myserver                  | 2 vCPU, 8 GB RAM, 500GB Disk                      | 192.168.15.101  | 23       |
+
+### Init & Java
+
+    $ sudo apt-get install zip nano vim iputils-ping git
+
+    $ sudo apt update
+    $ sudo apt install openjdk-17(또는 8)-jdk
+    $ java -version
+    $ javac -version
+    $ nano .bashrc
+    export JAVA_HOME=/usr/lib/jvm/java-17(또는 8)-openjdk-amd64
+    export PATH=$PATH:$JAVA_HOME
+    $ echo $JAVA_HOME
+    $ sudo apt-get install maven
+    $ mvn -version
+
+### Git clone
+    $ git clone https://github.com/microservices-patterns/ftgo-application.git
 
 ### dynamodblocal-init(파일수정)
 
