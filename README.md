@@ -133,13 +133,14 @@ https://docs.docker.com/engine/install/linux-postinstall/
     $ docker run hello-world
 
     # Security Issues
+    $ sudo chmod 666 /var/run/docker.sock
+    
+    $ docker login
+    $ docker pull ubuntu:22.04
 
 ### .profile
 
     #export DOCKER_HOST=localhost:2375
     export DOCKER_HOST_IP=192.168.15.100
     export COMPOSE_HTTP_TIMEOUT=240
-    $ sudo chmod 666 /var/run/docker.sock
-    
-    $ docker login
-    $ docker pull ubuntu:22.04
+
